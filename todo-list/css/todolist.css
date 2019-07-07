@@ -1,0 +1,144 @@
+body {
+  width: 100%;
+  background: #3f3d3d;
+}
+.main-container {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+.main-container .wrapper_to_do_list {
+  width: 450px;
+  margin: 70px 15px 100px 15px;
+  padding: 0 10px 10px 10px;
+  display: flex;
+  border-top: 5px solid #000000;
+  border-radius: 15px 15px;
+  background: white;
+  flex-direction: column;
+}
+.main-container .wrapper_to_do_list .name_to_doList {
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 38px;
+  color: #232727;
+}
+.main-container .wrapper_to_do_list .input_name_btn_add_task {
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+}
+.main-container .wrapper_to_do_list .input_name_btn_add_task .input_name_task {
+  display: flex;
+  flex: 7;
+  height: 38px;
+  font-size: 22px;
+  outline: none;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  margin-right: 10px;
+  padding-left: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+.main-container .wrapper_to_do_list .gif_preloader_hidden {
+  display: none;
+}
+.main-container .wrapper_to_do_list .gif_preloader {
+  position: absolute;
+  margin-top: 7px;
+}
+.main-container .div_wrapper_task {
+  display: flex;
+}
+.main-container .div_wrapper_task .li_wrapper_task {
+  display: flex;
+  width: 100%;
+  border-top: 1px dashed #000000;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+  padding: 2px;
+}
+.main-container .div_wrapper_task .li_wrapper_task .gif_preloader {
+  margin: 0 10px 5px 350px;
+}
+.main-container .div_wrapper_task .li_wrapper_task .div_wrap_input_name_task {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.main-container .div_wrapper_task .li_wrapper_task .div_wrap_input_name_task .checkbox {
+  display: flex;
+  align-content: center;
+}
+.main-container .div_wrapper_task .li_wrapper_task .div_wrap_input_name_task .checkbox .checkbox__img {
+  position: relative;
+  margin: 15px 10px 0 5px;
+  cursor: pointer;
+  background: url(../img/unchecked.png) no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+}
+.main-container .div_wrapper_task .li_wrapper_task .div_wrap_input_name_task .checkbox .input_type_checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.main-container .div_wrapper_task .li_wrapper_task .div_wrap_input_name_task .checkbox .input_type_checkbox:checked + .checkbox__img {
+  background: url(../img/checked.png) no-repeat;
+  background-size: contain;
+}
+.main-container .div_wrapper_task .li_wrapper_task .span_name_task {
+  font-size: 28px;
+}
+.main-container .div_wrapper_task .li_wrapper_task .replace_name_task {
+  flex: 24;
+  font-size: 28px;
+  color: #000000;
+  border: none;
+  padding: 0;
+  outline: none;
+}
+.main-container .div_wrapper_task .li_wrapper_task .btn_delete_task {
+  margin-top: 8px;
+}
+.main-container .div_wrapper_task .done_task {
+  text-decoration: line-through;
+  color: #a0a0a0;
+  text-decoration-color: #000000;
+}
+.main-container .div_wrapper_task .display_none_replace_task {
+  display: none;
+}
+.main-container .hide_footer {
+  display: none;
+  align-content: center;
+}
+.main-container .wrapper_footer {
+  display: flex;
+  border-top: 1px dashed #000000;
+  padding-top: 10px;
+}
+.main-container .wrapper_footer .div_items_footer {
+  display: flex;
+  flex: 3;
+}
+.main-container .wrapper_footer .div_items_footer .span_count_items {
+  padding: 2px 0 0 5px;
+  font-size: 14px;
+}
+.main-container .wrapper_footer .btn_filter_footer {
+  display: flex;
+  flex: 8;
+}
+.main-container .wrapper_footer .btn_filter_footer .btn_filter {
+  margin: 0 5px;
+}
+.main-container .wrapper_footer .btn_clean_tasks {
+  border-bottom-right-radius: 10px;
+}

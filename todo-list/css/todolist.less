@@ -1,0 +1,157 @@
+body {
+  width: 100%;
+  background: rgb(63, 61, 61);
+}
+.main-container {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+
+  .wrapper_to_do_list {
+    display: flex;
+    width: 450px;
+    margin: 70px 15px 100px 15px;
+    padding: 0 10px 10px 10px;
+    display: flex;
+    border-top: 5px solid #000000;
+    border-radius: 15px 15px;
+    background: white;
+    flex-direction: column;
+
+    .name_to_doList {
+      display: flex;
+      padding: 10px;
+      flex-direction: row;
+      justify-content: center;
+      font-size: 38px;
+      color: #232727;
+    }
+    .input_name_btn_add_task {
+      display: flex;
+      align-items: center;
+      align-content: space-between;
+
+      .input_name_task {
+        display: flex;
+        flex: 7;
+        height: 38px;
+        font-size: 22px;
+        outline: none;
+        border: 1px solid #000000;
+        border-radius: 3px;
+        margin-right: 10px;
+        padding-left: 10px;
+        font-family: "Open Sans", sans-serif;
+      }
+    }
+    .gif_preloader_hidden {
+      display: none;
+    }
+    .gif_preloader {
+      position: absolute;
+      margin-top: 7px;
+    }
+  }
+  //task
+  .div_wrapper_task {
+    display: flex;
+    .li_wrapper_task {
+      display: flex;
+      width: 100%;
+      border-top: 1px dashed #000000;
+      list-style-type: none;
+      justify-content: space-between;
+      align-items: center;
+      margin: 5px;
+      padding: 2px;
+      .gif_preloader {
+        margin: 0 10px 5px 350px;
+      }
+      .div_wrap_input_name_task {
+        display: flex;
+        position: relative;
+        // flex: 3;
+        align-items: center;
+        .checkbox {
+          display: flex;
+          .checkbox__img {
+            position: relative;
+            margin: 15px 10px 0 5px;
+            cursor: pointer;
+            background: url(../img/unchecked.png) no-repeat;
+            background-size: contain;
+            width: 15px;
+            height: 15px;
+          }
+          display: flex;
+          align-content: center;
+          .input_type_checkbox {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+            &:checked + .checkbox__img {
+              background: url(../img/checked.png) no-repeat;
+              background-size: contain;
+            }
+          }
+        }
+      }
+      .span_name_task {
+        font-size: 28px;
+      }
+      .replace_name_task {
+        flex: 24;
+        font-size: 28px;
+        color: #000000;
+        border: none;
+        padding: 0;
+        outline: none;
+      }
+      .btn_delete_task {
+        margin-top: 8px;
+      }
+    }
+    .done_task {
+      text-decoration: line-through;
+      color: #a0a0a0;
+      text-decoration-color: #000000;
+    }
+    .display_none_replace_task {
+      display: none;
+    }
+  }
+  //footer
+  .hide_footer {
+    display: none;
+    align-content: center;
+  }
+  .wrapper_footer {
+    display: flex;
+    border-top: 1px dashed #000000;
+    padding-top: 10px;
+    .div_items_footer {
+      display: flex;
+      flex: 3;
+      .span_count_items {
+        padding: 2px 0 0 5px;
+        font-size: 14px;
+      }
+    }
+    .btn_filter_footer {
+      display: flex;
+      flex: 8;
+      .btn_filter {
+        margin: 0 5px;
+      }
+    }
+    .btn_clean_tasks {
+      border-bottom-right-radius: 10px;
+    }
+  }
+}
+// @media screen and (max-width: 320px) {
+//   .body {
+//     width: 80%;
+//   }
+// }
