@@ -1,0 +1,66 @@
+﻿body {
+  width: 100%; 
+  margin: 0 auto;
+  background: rgb(87, 87, 87);
+}
+.сalcWrap {
+  display: flex;
+  width: 300px;
+  margin: 0 auto;
+  flex-direction: column;
+  margin-top: 130px;
+  padding: 10px;
+  background: rgb(189, 187, 187);
+  border-radius: 5px;
+}
+.btnWrap {
+  display: flex;
+  flex-direction: column;
+}
+.btnBlock {
+  display: flex;
+  justify-content: space-between;
+}
+.number,
+.operators,
+.deleteValue,
+.plusMinus,
+.result {
+  display: flex;
+  flex: 1;
+  margin: 10px;
+  height: 40px;
+  width: 30px;
+  background: rgb(77, 77, 77);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  justify-content: center;
+  outline: 0;
+}
+
+.inputText {
+  margin: 10px;
+  height: 50px;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 32px;
+  border: none;
+  border-radius: 4px;
+}
+
+.deleteValue {
+  display: flex;
+  padding-right: 10px;
+  flex: 5;
+  justify-content: flex-end;
+}
+.number:active,
+.operators:active,
+.deleteValue:active,
+.plusMinus:active,
+.result:active {
+  background: rgb(129, 130, 131);
+  color: rgb(14, 13, 13);
+}
