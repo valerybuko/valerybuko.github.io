@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates");
+body {
+  width: 100%;
+  font-family: "Montserrat Alternates", sans-serif;
+  background: #3b3b3b;
+  color: white;
+}
+.container-basket-fruits {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.container-basket-fruits .name-project {
+  font-size: 32px;
+  margin: 30px 0 0 30px;
+}
+.container-basket-fruits .wrapper-panel {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.container-basket-fruits .wrapper-panel .wrapper-info-about-fruit {
+  display: flex;
+  width: 450px;
+  border: 1px solid white;
+  border-right: none;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 10px 0 0 10px;
+}
+.container-basket-fruits .wrapper-panel .wrapper-info-about-fruit .wrapper-info-select {
+  display: flex;
+  flex-direction: column;
+}
+.container-basket-fruits .wrapper-panel .wrapper-info-about-fruit .wrapper-info-select .select-all-fruits {
+  outline: 0;
+  border-top-left-radius: 5px;
+}
+.container-basket-fruits .wrapper-panel .wrapper-info-about-fruit .wrapper-properties-fruits {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+.container-basket-fruits .wrapper-panel .wrapper-info-about-fruit .wrapper-properties-fruits .input-name-fruit {
+  border: 1px solid black;
+  border-top-right-radius: 5px;
+  outline: 0;
+}
+.container-basket-fruits .wrapper-panel .wrapper-info-about-fruit .wrapper-properties-fruits .input-pear-text {
+  border: 1px solid black;
+  border-bottom-right-radius: 5px;
+  outline: 0;
+}
+.container-basket-fruits .wrapper-panel .wrapper-info-about-fruit .wrapper-properties-fruits .input-orange-text {
+  border: 1px solid black;
+  border-bottom-right-radius: 5px;
+  outline: 0;
+}
+.container-basket-fruits .wrapper-panel .buttons-save-and-delete-fruits {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 5px;
+  border-left: 1px solid white;
+  padding-left: 10px;
+}
+.container-basket-fruits .wrapper-panel .buttons-save-and-delete-fruits .btn {
+  color: white;
+}
+.container-basket-fruits .wrapper-basket {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container-basket-fruits .wrapper-basket span {
+  color: gray;
+  font-size: 24px;
+}
+.container-basket-fruits .wrapper-basket li {
+  list-style-type: none;
+}
+@media screen and (max-width: 500px) {
+  .container-basket-fruits {
+    flex-direction: column;
+  }
+  .container-basket-fruits .name-project {
+    margin-top: 10px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .container-basket-fruits .wrapper-panel {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+  .container-basket-fruits .wrapper-panel .wrapper-info-about-fruit {
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+    border: none;
+    padding: 0 3px;
+  }
+  .container-basket-fruits .wrapper-panel .wrapper-info-about-fruit .wrapper-info-select {
+    margin-right: 20px;
+  }
+  .container-basket-fruits .wrapper-panel .wrapper-info-about-fruit .wrapper-info-select .select-all-fruits {
+    font-size: 10px;
+  }
+  .container-basket-fruits .wrapper-panel .buttons-save-and-delete-fruits {
+    margin: 0 100px;
+    border-top: 1px solid white;
+    padding-top: 20px;
+    border-left: none;
+  }
+  .container-basket-fruits .wrapper-panel .buttons-save-and-delete-fruits .btn {
+    margin-bottom: 15px;
+  }
+  .wrapper-basket {
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrapper-basket .wrappers {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper-basket .wrappers li {
+    font-size: 14px;
+  }
+  .wrapper-basket .wrappers span {
+    text-align: center;
+    font-size: 18px;
+  }
+  .wrapper-basket .wrappers .wrapper-all-apples {
+    display: flex;
+    align-content: stretch;
+    flex-wrap: wrap;
+  }
+  .wrapper-basket .wrappers .wrapper-all-pears {
+    display: flex;
+    align-content: stretch;
+    flex-wrap: wrap;
+  }
+  .wrapper-basket .wrappers .wrapper-all-oranges {
+    display: flex;
+    align-content: stretch;
+    flex-wrap: wrap;
+  }
+}
